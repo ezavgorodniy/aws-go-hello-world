@@ -2,7 +2,7 @@
 
 Simple application that exposes following HTTP-based APIs:
 
-1. PUT /hello/<username> { “dateOfBirth”: “YYYY-MM-DD” }
+1. PUT /hello/&lt;username&gt; { “dateOfBirth”: “YYYY-MM-DD” }
 Saves/updates the given user’s name and date of birth in the database.
 
 Expected responses: 
@@ -10,7 +10,7 @@ Expected responses:
 - 400 Bad Request - when invalid username is providen (must contain only letters) or invalid date of birth is providen YYYY-MM-DD
 - 500 Internal Server Error - unhandled exception 
 
-2. GET /hello/<username>
+2. GET /hello/&lt;username&gt;
 
 Expected responses: 
 - 200 OK - hello birthday message for the given user
